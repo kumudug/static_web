@@ -33,8 +33,8 @@ Lets begin...
 
 Everything eventually gets outdated. At the time of creation the versions are,
 
-* OS [Arch Linux x86_64 with kernel 5.9.13-arch1-1]
-* Node v15.4.0
-* npm 6.14.8
-* webpack 5.10.1
-* webpack-cli 4.2.0
+* OS [Arch Linux x86_64 with kernel 5.11.1-arch1-1]
+* Node v15.10.0
+* npm 6.14.11
+* webpack 5.24.2
+* webpack-cli 4.5.0

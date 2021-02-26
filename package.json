@@ -30,5 +30,11 @@
     "webpack-manifest-plugin": "^3.0.0",
     "webpack-merge": "^5.7.3",
     "webpack-nano": "^1.1.1"
+  },
+  "dependencies": {
+    "@material/button": "^10.0.0",
+    "@material/icon-button": "^10.0.0",
+    "@material/ripple": "^10.0.0",
+    "@material/top-app-bar": "^10.0.0"
   }
 }

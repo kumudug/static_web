@@ -38,3 +38,4 @@ Everything eventually gets outdated. At the time of creation the versions are,
 * npm 6.14.11
 * webpack 5.24.2
 * webpack-cli 4.5.0
+* Material 10.0.0

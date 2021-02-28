@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 
 module.exports = {
   entry: {
@@ -31,7 +32,8 @@ module.exports = {
     }),
     new ESLintPlugin({
       exclude: 'node_modules'
-    })
+    }),
+    new HtmlWebpackInlineSVGPlugin()
   ],
   output: {
     publicPath: '',

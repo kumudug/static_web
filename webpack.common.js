@@ -33,7 +33,9 @@ module.exports = {
     new ESLintPlugin({
       exclude: 'node_modules'
     }),
-    new HtmlWebpackInlineSVGPlugin()
+    new HtmlWebpackInlineSVGPlugin({
+      runPreEmit: true
+    })
   ],
   output: {
     publicPath: '',

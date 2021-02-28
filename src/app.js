@@ -22,7 +22,7 @@ const gloRipples = [].map.call(document.querySelectorAll(selector), function(el)
 
 
 //Common Images
-import gloBlogIcon from './res/blogging.svg';
+//import gloBlogIcon from './res/blogging.svg';
 
 
 

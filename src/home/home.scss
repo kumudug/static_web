@@ -4,6 +4,14 @@
   padding: 1rem;
 }
 
+.main_cards_nav {
+  height: 100%;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: nav-start;
+  grid-column-end: nav-end;
+}
+
 .main_cards__blog {
   grid-column-start: hd-start;
   grid-column-end: hd-end;
@@ -26,9 +34,24 @@
   width: 5rem;
   height: 5rem;
 
-
   path {
     fill: $primary_green;
+  }
+}
+
+.login-btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.login-ico {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 2rem;
+  height: 2rem;
+
+  path {
+    fill: $primary_purple;
   }
 }
 

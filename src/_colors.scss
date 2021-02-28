@@ -11,6 +11,7 @@ $blue-gray-800-dark: #102027;
 $gray-800-dark: #1b1b1b;
 $green-800: #1b5e20;
 $purple-600: #8e24aa;
+$purple-600-light: #c158dc;
 $light-green-500-light: #bef67a;
 
 
@@ -21,6 +22,7 @@ $background: $gray-900;
 $surface: lighten($background, 7%);
 $primary_green: $light-green-500-light;
 $primary_purple: $purple-600;
+$primary_purple-light: $purple-600-light;
 
 /* elevation from material
 00dp	0%

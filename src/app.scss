@@ -65,7 +65,7 @@ a:hover {
 //@media (min-width: 61rem) {
 @media (min-width: 1024px) {
   .container {
-    grid-template-columns: [hd-start] repeat(8, [col-start] 1fr [col-end]) [hd-end];
+    grid-template-columns: [nav-start] 0.5fr [nav-end hd-start] repeat(6, [col-start] 1fr [col-end]) [hd-end];
   }
   .mdc-top-app-bar {
     display: none;

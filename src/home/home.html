@@ -12,46 +12,32 @@
 
 <body>
     <main>
-        <header class="mdc-top-app-bar mdc-top-app-bar--fixed mdc-top-app-bar--fixed-adjust">
-            <div class="mdc-top-app-bar__row">
-                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                    <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
-                        aria-label="Open navigation menu">menu</button>
-                    <span class="mdc-top-app-bar__title">Coding-Mayhem</span>
-                </section>
-                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                        aria-label="Search">search</button>
-                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                        aria-label="Options">more_vert</button>
-                </section>
-            </div>
-        </header>
-        <section id="container" class="container">
-            <div class="mdc-card main_cards main_cards__blog">
-                <div class="mdc-card__primary-action" tabindex="0">
-                    <div class="main_cards__blog--primary">
-                        <img inline src="src/res/blogging.svg" alt="blog icon" class="blog-ico" />
-                        <p>Blog Posts</p>
+        <%= require('html-loader!/src/partials/top-bar.html').default %>
+            <section id="container" class="container">
+                <div class="mdc-card main_cards main_cards__blog">
+                    <div class="mdc-card__primary-action" tabindex="0">
+                        <div class="main_cards__blog--primary">
+                            <img inline src="src/res/blogging.svg" alt="blog icon" class="blog-ico" />
+                            <p>Blog Posts</p>
+                        </div>
                     </div>
+                    <!-- ... content ... -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est
+                        laborum.</p>
                 </div>
-                <!-- ... content ... -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea
-                    commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                    id est
-                    laborum.</p>
-            </div>
-            <div class="attributions">Icons made by&nbsp;<a href="https://www.flaticon.com/authors/freepik"
-                    title="Freepik">Freepik</a>&nbsp;from&nbsp;<a href="https://www.flaticon.com/"
-                    title="Flaticon">www.flaticon.com</a></div>
-        </section>
+                <div class="attributions">Icons made by&nbsp;<a href="https://www.flaticon.com/authors/freepik"
+                        title="Freepik">Freepik</a>&nbsp;from&nbsp;<a href="https://www.flaticon.com/"
+                        title="Flaticon">www.flaticon.com</a></div>
+            </section>
     </main>
 </body>
 

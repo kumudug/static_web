@@ -9,7 +9,8 @@ const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 module.exports = {
   entry: {
     home: './src/home/home.js',
-    app: './src/app.js'
+    app: './src/app.js',
+    login: './src/login/login.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -26,6 +27,13 @@ module.exports = {
       inject: true,
       chunks: ['home', 'app'],
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'coding-mayhem',
+      template: 'src/login/login.html',
+      inject: true,
+      chunks: ['login', 'app'],
+      filename: 'login.html'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',

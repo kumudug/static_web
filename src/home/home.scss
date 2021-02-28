@@ -1,0 +1,42 @@
+@import "../colors";
+
+.main_cards {
+  padding: 1rem;
+}
+
+.main_cards__blog {
+  grid-column-start: hd-start;
+  grid-column-end: hd-end;
+}
+
+.main_cards__blog--primary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Yellowtail", cursive;
+
+  p {
+    font-size: 3rem;
+  }
+}
+
+.blog-ico {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 5rem;
+  height: 5rem;
+
+
+  path {
+    fill: $primary_green;
+  }
+}
+
+.attributions {
+  grid-column-start: hd-start;
+  grid-column-end: hd-end;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

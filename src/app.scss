@@ -1,0 +1,73 @@
+@import "_material.scss";
+@import "@material/theme";
+
+body {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  background-color: $background;
+  color: $on-primary;
+}
+
+.container {
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  margin: 0 1rem 0 1rem;
+  padding-top: 1rem;
+}
+
+.mdc-top-app-bar {
+  padding-top: 0;
+  top: 0;
+  left: 0;
+}
+
+.mdc-top-app-bar__title {
+  font-family: "Yellowtail", cursive;
+  font-size: 2rem;
+  min-height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  color: $on_primary;
+  text-decoration: underline;
+}
+
+//Root font size 16px
+
+//Really small phones
+//@media (max-width: 40rem) {
+@media (max-width: 640px) {
+  .container {
+    margin-top: 50px; //avoid top-app-bar
+    grid-template-columns: [hd-start] repeat(2, [col-start] 1fr [col-end]) [hd-end];
+  }
+}
+
+//Regular pixels, iphones
+//Most users
+//@media (min-width: 41rem) and (max-width: 60rem) {
+@media (min-width: 640px) and (max-width: 1024px) {
+  .container {
+    margin-top: 65px; //avoid top-app-bar
+    grid-template-columns: [hd-start] repeat(4, [col-start] 1fr [col-end]) [hd-end];
+    grid-template-areas: "header header header header";
+  }
+}
+
+//tablets and the rest
+//@media (min-width: 61rem) {
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: [hd-start] repeat(8, [col-start] 1fr [col-end]) [hd-end];
+  }
+  .mdc-top-app-bar {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+//Colors using material color tool
+$blue-gray-700-dark: #1c313a;
+$blue-gray-700: #455a64;
+$blue-gray-600-dark: #29434e;
+$blue-gray-400-dark: #4b636e;
+$gray-400-dark: #8d8d8d;
+$blue-gray-900-dark: #000a12;
+$blue-gray-900: #263238;
+$gray-900: #212121;
+$blue-gray-800-dark: #102027;
+$gray-800-dark: #1b1b1b;
+$green-800: #1b5e20;
+$purple-600: #8e24aa;
+$light-green-500-light: #bef67a;
+
+
+
+$primary: $gray-800-dark; 
+$secondary: $gray-400-dark;
+$background: $gray-900;
+$surface: lighten($background, 7%);
+$primary_green: $light-green-500-light;
+$primary_purple: $purple-600;
+
+/* elevation from material
+00dp	0%
+01dp	5%
+02dp	7%
+03dp	8%
+04dp	9%
+06dp	11%
+08dp	12%
+12dp	14%
+16dp	15%
+24dp	16%
+*/

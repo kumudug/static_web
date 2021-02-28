@@ -1,0 +1,30 @@
+@use '_colors.scss' as my-colors;
+@use "@material/theme" with (
+  /* Used by looking at the material theme code in git
+  https://github.com/material-components/material-components-web/blob/5cb7dfde6990fe1f73605fd7f64b8239bd8ba78d/packages/mdc-theme/_theme-color.scss#L113*/
+  $primary: my-colors.$primary, 
+  // $on_primary: #2A2931,
+  $secondary: my-colors.$secondary, 
+  // $on_secondary: #ffffff,
+  $background: my-colors.$background, 
+
+  $surface: my-colors.$surface,
+  // $on_surface: #ffffff,
+  
+  // $error: #b00020,
+  // $on_error: #ffffff,
+);
+
+@use "@material/typography" with (
+  $font-family: unquote("Merriweather, serif")
+);
+
+@use "@material/icon-button";
+@use "@material/button/styles";
+@use "@material/card";
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+@include icon-button.core-styles;
+//@include button.core-styles;
+@include card.core-styles;
+@include theme.core-styles;

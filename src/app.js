@@ -24,6 +24,9 @@ const gloRipples = [].map.call(document.querySelectorAll(selector), function(el)
 //Common Images
 //import gloBlogIcon from './res/blogging.svg';
 
+// [].forEach.call(document.querySelectorAll('.mdc-text-field'), function(textFieldEl) {
+//     MDCTextField.attachTo(textFieldEl);
+//   });
 
 
 

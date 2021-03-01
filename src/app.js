@@ -5,12 +5,14 @@ import './app.scss';
 
 // Material Imports
 import {MDCRipple} from '@material/ripple';
-
+import {MDCTextField} from '@material/textfield';
 
 const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
 const gloRipples = [].map.call(document.querySelectorAll(selector), function(el) {
   return new MDCRipple(el);
 });
+
+const gloTextField = new MDCTextField(document.querySelector('.mdc-text-field'));
 
 // const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
 // iconButtonRipple.unbounded = true;

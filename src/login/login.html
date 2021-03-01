@@ -12,9 +12,25 @@
 
 <body>
     <main>
-            <section id="container" class="container">
-                
-            </section>
+        <section id="container" class="login-container">
+            <label class="mdc-text-field mdc-text-field--filled">
+                <span class="mdc-text-field__ripple"></span>
+                <span class="mdc-floating-label" id="user-name">User Name</span>
+                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                <span class="mdc-line-ripple"></span>
+            </label>
+            <label class="mdc-text-field mdc-text-field--filled">
+                <span class="mdc-text-field__ripple"></span>
+                <span class="mdc-floating-label" id="pwd">Password</span>
+                <input class="mdc-text-field__input" aria-labelledby="my-label-id" type="password">
+                <span class="mdc-line-ripple"></span>
+            </label>
+            <button class="mdc-button mdc-button--outlined" onclick="location.href='index.html';">
+                <span class="mdc-button__ripple"></span>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">login</i>
+                <span class="mdc-button__label">Login</span>
+            </button>
+        </section>
     </main>
 </body>
 

@@ -1,0 +1,18 @@
+@import "../colors";
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.mdc-text-field {
+    margin-bottom: 0.5rem;
+}
+
+.mdc-button--outlined {
+    background-color: $primary_green !important;
+}

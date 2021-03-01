@@ -19,6 +19,11 @@
   $font-family: unquote("Merriweather, serif")
 );
 
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+
 @use "@material/icon-button";
 @use "@material/button/styles";
 @use "@material/card";
@@ -29,6 +34,7 @@
 //@include button.core-styles;
 @include card.core-styles;
 @include theme.core-styles;
+@include textfield.core-styles;
 
 /*
 Using Material Mixins

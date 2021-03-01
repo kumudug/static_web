@@ -5,11 +5,19 @@
 }
 
 .main_cards_nav {
-  height: 100%;
   grid-row-start: 1;
   grid-row-end: 6;
   grid-column-start: nav-start;
   grid-column-end: nav-end;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_cards_nav__item {
+  margin-bottom: 1rem;
+  width: 100%;
+  align-items: center;
 }
 
 .main_cards__blog {
@@ -33,6 +41,19 @@
   margin-right: 2rem;
   width: 5rem;
   height: 5rem;
+
+  path {
+    fill: $primary_green;
+  }
+}
+
+.blog-ico-nav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 2rem;
+  height: 2rem;
 
   path {
     fill: $primary_green;
@@ -65,5 +86,5 @@
 }
 
 .icon_lgout {
-  color: $primary_green !important;
+  color: $primary_purple !important;
 }

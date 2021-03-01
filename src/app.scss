@@ -48,6 +48,9 @@ a:hover {
     margin-top: 50px; //avoid top-app-bar
     grid-template-columns: [hd-start] repeat(2, [col-start] 1fr [col-end]) [hd-end];
   }
+  .main_cards_nav {
+    display: none;
+  }
 }
 
 //Regular pixels, iphones
@@ -59,6 +62,9 @@ a:hover {
     grid-template-columns: [hd-start] repeat(4, [col-start] 1fr [col-end]) [hd-end];
     grid-template-areas: "header header header header";
   }
+  .main_cards_nav {
+    display: none;
+  }
 }
 
 //tablets and the rest
@@ -69,5 +75,8 @@ a:hover {
   }
   .mdc-top-app-bar {
     display: none;
+  }
+  .main_cards_nav {
+    display: flex;
   }
 }
